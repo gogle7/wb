@@ -1,0 +1,37 @@
+<html>
+	<head>
+	<style>
+		.one{
+			color:red;
+			font-size:20pt;
+			}
+		</style>
+	</head>
+<body>
+
+<form>
+ 	 Select country from below list:
+  	<select id="mySelect">
+  		  <option value="New Delhi">india</option>
+   		 <option value="Washington">America</option>
+    		<option value="Beijing">china</option>
+   		 <option value="Ottawa">canada</option>
+		<option value="Havana">cuba</option>
+	  </select>
+</form>
+
+<p>Click the button to get capital city of the selected country.</p>
+
+<button type="button" onclick="myFunction()">submit</button>
+
+<p class="one" id="demo"></p>
+
+<script>
+function myFunction() {
+	  var x = document.getElementById("mySelect").value;
+ 	 document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+</body>
+</html>

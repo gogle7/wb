@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Validation of USN</title>
+<script type="text/javascript">
+function validate_usn()
+{
+		var str1=document.getElementById("usn");
+	var result=str1.value.search(/^[1-4]{1}[A-Z]{2}\d{2}[A-Z]{2}\d{3}$/i);
+	 if(result!=0)
+ 	{
+		alert("invalid USN");
+ 	}
+	else
+	{
+ 		alert("valid USN");
+	 }
+}
+</script>
+
+</head>
+<body>
+<form id="form1">
+<h3>Enter your USN</h3>
+<input type="text" id="usn"/>
+<br/>
+<br/>
+<input type="button" OnClick="validate_usn()" value="submit"/>
+<input type="reset" value="reset"/>
+</form>
+</body>
+</html>
+
